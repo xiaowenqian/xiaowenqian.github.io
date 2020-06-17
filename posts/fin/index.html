@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="">
+
+    
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap" rel="stylesheet" media="print" type="text/css" onload="this.media='all'">
+    
+
+    <title>
+      
+      
+         《货币金融学》读书笔记 
+      
+    </title>
+    <link rel="canonical" href="https://www.example.com/posts/fin/">
+
+    <style>
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+    text-decoration-skip: ink;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify { float: left; }
+  .right-justify { float:right; }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:"Old Standard TT",serif;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, .date {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:60px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content .date {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(1) {
+    margin-right:0.5em;;
+  }
+
+  #links :nth-child(2) {
+    margin-left:0.5em;;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    *, #nav h1 a {
+      color: #FDFDFD;
+    }
+
+    body {
+      background: #121212;
+    }
+
+    pre, code {
+      background-color: #262626;
+    }
+
+    #sub-header, .date {
+      color: #BABABA;
+    }
+
+    hr {
+      background: #EBEBEB;
+    }
+  }
+</style>
+
+
+    </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="https://www.example.com/">Candice Xiao</a></h1>
+      <ul>
+        
+          <li><a href="https://www.example.com/about">About Me</a></li>
+        
+          <li><a href="https://github.com/xiaowenqian">Github</a></li>
+        
+          <li><a href="https://www.example.com/notes">Reading Notes</a></li>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1> 《货币金融学》读书笔记 </h1>
+
+  
+    <div id=sub-header>
+      June 2020 · 1 minute read
+    </div>
+  
+
+  <div class="entry-content">
+    <h2 id="heading"></h2>
+<p><strong>一级市场和二级市场</strong>
+一级市场是筹集资金的公司或政府将其发行的股票或债券等销售给最初购买者的金融市场
+二级市场是交易已经发行的证券的金融市场
+一级市场并不被公众所熟知，因为将证券销售给最初购买者是不公开进行的
+投资银行是一级市场上协助证券首次出售的重要金融机构，投资银行的做法是证券承销，即他们确保公司证券能按一定价格卖出去，之后再向公众销售这些证券
+如纽约NASDAQ才是著名的二级市场，这些交易的是已经发行的股票，经纪人是投资的代理人，负责匹配买方和卖方，交易商按照报价买卖证券，从而将双方联结起来
+注意：公司只有在其证券在一级市场上首次发行时才获得了货币收入，买卖证券时公司并没有得到新的资金
+<em>二级市场发挥的功能</em></p>
+<ol>
+<li>使投资者能够更容易快捷的出售金融工具，也就是更好的流动性</li>
+<li>二级市场决定了发行企业在一级市场上销售证券的价格，二级市场价格越高往往发行时就能筹到更多的钱
+<strong>交易所和场外市场</strong>
+交易所：指在一个集中场所交易的市场
+场外市场：分处各地拥有证券存货的交易商随时向与其联系并愿意接受其报价的人在“柜台”上买卖证券的二级市场
+大部分大公司的股票在股票交易所交易，但更多普通股在场外交易的。美国政府债券市场就是作为场外市场出现的，场外市场包括交易可转让存单、联邦基金与外汇等
+<strong>货币市场与资本市场</strong>
+货币市场是交易短期债务的工具，资本市场是交易长期债务的工具</li>
+</ol>
+<h3 id="金融市场工具">金融市场工具</h3>
+<h4 id="货币市场工具">货币市场工具</h4>
+<p><em>美国国库券（United States Treasury Bills）</em>：美国政府发行的短期债券，1、3、6个月，不付息，低价卖，如9k买1w的国库券，几乎无风险
+<em>可转让存单（negotiable bank certificates of deposit）</em>：存单是银行向储户发行的债务工具，每年付固定息，到期日清偿
+<em>商业票据（commercial paper）</em>：大企业如微软，发行的短期债务工具
+<em>回购协议（repurchase agreements，repos）</em>：一种短期贷款（期限通常是两周内），如果借款人还不清贷款，国库券作为抵押品将归贷款人所有，场景是企业有余钱100，给银行，一周后银行买102国库券，回购协议目前是银行资金的重要来源，主要的贷款人是大型企业
+<em>联邦基金（federal funds）</em>：银行在美联储的存款的隔夜贷款，这些贷款不是由美联储发放的，而是银行之间的贷款。贷款原因一般是银行存款余额没达到监管要求，这种贷款可以在银行间用美联储的电子转账系统转入借款银行，该贷款利率即联邦基金利率，可以反映银行贷款政策与货币政策的松紧情况</p>
+<h4 id="资本市场工具">资本市场工具</h4>
+<p><em>股票（stocks）</em>：对公司净收入和资产的索取权
+<em>抵押贷款和抵押支持证券</em>：抵押贷款（mortgages）是向家庭或企业发放的用于购置房屋、土地或者其他建筑物的贷款，建筑物即为贷款抵押品。近年来，越来越多的抵押贷款是以抵押支持证券（mortgages-backed securities）的方式提供的，它依托于一揽子个人抵押贷款，这些贷款的利息和本金支付给证券的持有者。
+<em>企业债券（corporate bonds）</em>：这些长期债券是由信用评级非常高的企业发行的，通常每年付息2次，到期清偿。一些债券可以在到期之前随时转换成股票，这类债券称为可转换债券。企业债券由于发行规模，流通性不大，但每年新发行的多，企业债券主要的购买人是保险公司
+<em>美国政府债券（US government securities）</em>：美国财政部为了弥补财政赤字而发行的长期债务工具，流通性好，持有者主要是美联储、银行、家庭、外国投资者
+<em>美国政府机构债券（US government agency securities）</em>：政府国民抵押贷款协会、联邦农业信贷等政府机构发行的，目的是为农业信贷，发电设备等筹资。运作模式与美国政府债券类似。
+<em>州和地方政府债券（state and local government bonds）</em>：也称市政债券（municipal bonds），由州和地方政府发现为建公路、学校筹资。这类债券的一个重要特征是可以免缴联邦所得税
+<em>消费者贷款和银行商业贷款（consumer and bank commercial loans）</em>：主要由银行和公司发放给消费者和企业
+<strong>金融中介</strong>
+通过中介机构进行间接融资。主要起到的作用是：</p>
+<ul>
+<li>交易成本（transaction cost）：金融交易所耗费的时间和金钱，由于金融中介的规模可以享受规模经济，交易成本可以降低</li>
+<li>风险分担（risk sharing）：通过资产转换、资产多样化实现</li>
+<li>信息不对称（asymmetric information）：金融中介更清楚收益和风险，但是存在两个问题：
+<em>逆向选择（adverse selection）</em>：在交易前信息不对称，金融市场的逆向选择指，那些最可能造成不利后果的潜在借款人往往是最积极寻求借款的，在交易前由于信息不对称并不易分辨。
+<em>道德风险（normal hazard）</em>：交易之后，信息不对称，金融市场中指借了钱并不按照提前签约的说明去花钱。</li>
+<li>范围经济（economies of scope）：金融中介可提供多种金融服务，从而将同一信息源应用于多种应用服务，从而降低信息成本（如银行发放贷款评估某公司的风险，该信息也可以用于评估该公司的债券）。但是与此同时，多种业务也可能造成利益冲突</li>
+</ul>
+<h2 id="3章-什么是货币">3章 什么是货币</h2>
+<p><strong>货币的功能</strong>
+1.交易媒介2.记账单位3.价值贮藏</p>
+<h2 id="4章-理解利率">4章 理解利率</h2>
+<p>债券现价与利率是负向相关的；当利率上升时，债券价格下跌；反之亦然</p>
+<h2 id="5章-利率行为">5章 利率行为</h2>
+<p><em>投资组合选择理论：</em></p>
+<ol>
+<li>资产需求数量与财富规模成正相关</li>
+<li>资产需求数量与其相对于其他替代性资产的预期回报率正相关</li>
+<li>资产需求数量与其相对于其他替代性资产的回报率风险负向相关</li>
+<li>资产需求数量与其相对于其他替代性资产的流动性程度呈正向相关
+** 增大货币供给后，几种效应**：
+流动性效应来说，增大货币供给，利率下降，但
+*收入效应*：货币供给增加会扩大国民收入与财富规模，这会导致利率上升
+*价格效应*：货币供给增加引起物价上升从而导致，利率上升
+*通货膨胀预期效应*：人们预期会通胀上升，从而导致利率上升
+一般先是流动性效应，后是收入效应和价格效应，通货膨胀效应一直存在。
+根据三种效应的程度不同，会产生不同的影响。如果通货膨胀效应大于流动性效应，利率甚至将直接升高，见美国20世纪70年代中期</li>
+</ol>
+<h2 id="6章-利率的风险结构与期限结构">6章 利率的风险结构与期限结构</h2>
+<p><em>利率的风险结构</em>：为什么期限相同的债券有着不同的利率，这些利率之间的联系称为利率的风险结构
+<em>利率的期限结构</em>：期限不同的债券之间的利率联系
+<strong>利率的风险结构</strong>
+主要是3个部分：违约风险、流动性、债券相关所得税等政策
+没有违约风险的债券被称为无违约风险债券
+有违约风险的债券与无违约风险债券之间的利差被称为风险溢价：具有违约风险的债券风险溢价总为正，且风险溢价随着违约风险的上升而增加
+<strong>利率的期限结构</strong>
+不同期限连起来的线：收益率曲线，每天公布
+<em>预期理论</em>：
+长期债券的利率等于在其有效期内人们所预期的短期利率的平均值
+预期理论可以解释事实：</p>
+<ol>
+<li>随着时间的推移，到期期限不同的债券的利率有同向运动的趋势</li>
+<li>如果短期利率较低，收益率曲线倾向于向上倾斜；如果短期利率较高，收益率曲线通常是翻转的
+预期理论无法解释：事实的收益率曲线通常是向上倾斜的
+<em>分割市场理论</em>：
+期限不同的债券市场被看作独立，通常情况下，长期债券相对于短期债券的需求较少，因此其价格更低，利率较高，从此能够接受收益率曲线通常是向上倾斜的
+<em>流动性溢价理论</em>：
+流动性溢价理论认为：长期债券利率应当等于两项之和，即一是长期债券到期前预期短期利率的平均值，而是债券随供求变动而变动的流动性溢价（也称期限溢价）
+<strong>收益率曲线的预测功能</strong>
+收益率曲线由于包含预期未来短期利率：收益率曲线的向下倾斜表明预期未来短期利率下跌，因为经济可能陷入萧条，可用于预测经济周期
+收益率曲线包含了名义利率和未来通货膨胀的信息，陡峭的收益率意味着未来通货膨胀率上升，平坦或向下意味着下降
+因为预期经济周期和通货膨胀率，所以也可以体现货币政策立场，陡峭的收益率意味着宽松政策，平坦或向下意味着紧缩</li>
+</ol>
+<h2 id="7章-股票市场理性预期理论与有效市场假说">7章 股票市场、理性预期理论与有效市场假说</h2>
+<p>市场如何确定股票价格：</p>
+<ol>
+<li>单个价格是由愿意支付最高价格的买主确定的</li>
+<li>市场价格是由最能有效利用该资产的买主确定的</li>
+<li>信息在资产定价中有着很重要的作用，更全面准确的信息能够通过降低它的风险提高价值</li>
+</ol>
+
+  </div>
+
+  <div id=links>
+    
+    
+  </div>
+</section>
+
+  
+</body>
+</html>
+
+
+
